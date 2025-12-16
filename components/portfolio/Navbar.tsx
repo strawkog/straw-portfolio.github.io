@@ -25,7 +25,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollTo = (href) => {
+  const scrollTo = (href: string) => {
     setMobileOpen(false);
     if (href === "#") {
       window.scrollTo({ top: 0, behavior: "smooth" });
